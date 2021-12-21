@@ -1,3 +1,4 @@
-deployment:
-  image: nginx:1.21.4
-  replicas: 1
+payara-chart:
+  deployment:
+    image: nginx:1.21.4
+    replicas: 3
