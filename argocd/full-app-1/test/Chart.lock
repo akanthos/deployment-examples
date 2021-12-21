@@ -1,0 +1,9 @@
+dependencies:
+- name: quarkus-chart
+  repository: https://akanthos.github.io/deployment-charts
+  version: 0.2.0
+- name: openui-chart
+  repository: https://akanthos.github.io/deployment-charts
+  version: 0.1.0
+digest: sha256:d61278d4ddbee67cb6e4f973654a760abe3268214d033773039cd39993d9db99
+generated: "2021-12-21T18:07:37.048883+01:00"
