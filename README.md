@@ -24,7 +24,7 @@ List all charts in repository:
 helm search repo deployment-charts
 ```
 
-To install an app with a specific app version use:
+To install an app with a specific chart version and specific environment values:
 
 ```bash 
 helm upgrade --install quarkus-app1 -f values-test.yaml deployment-charts/quarkus-chart --version 0.2.0
