@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: msc-sample-app
+  name: helm-full-app-2
   namespace: argocd
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: csc-test
+    namespace: helm-guestbook
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: msc-sample-app/test
+    path: full-app-2/test
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
