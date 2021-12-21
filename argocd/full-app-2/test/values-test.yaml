@@ -1,3 +1,0 @@
-deployment:
-  image: nginx:1.14.2
-  replicas: 2
