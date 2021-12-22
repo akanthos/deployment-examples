@@ -1,0 +1,4 @@
+quarkus-chart:
+  deployment:
+    image: nginx:1.21.4 # put the correct image here
+    replicas: 5

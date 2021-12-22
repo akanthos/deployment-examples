@@ -1,0 +1,11 @@
+apiVersion: v2
+description: This Chart deploys the full-app-2 microservice.
+name: full-app-2
+version: "0.1.0"
+dependencies:
+  - name: payara-chart
+    version: "0.1.0"
+    repository: "https://akanthos.github.io/deployment-charts"
+  - name: openui-chart
+    version: "0.1.0"
+    repository: "https://akanthos.github.io/deployment-charts"

@@ -1,4 +1,4 @@
 payara-chart:
   deployment:
     image: nginx:1.21.4
-    replicas: 5
+    replicas: 3

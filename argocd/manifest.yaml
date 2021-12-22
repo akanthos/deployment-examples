@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argocd/full-app-3/prod
+    path: argocd/full-app-2/test
     repoURL: https://github.com/akanthos/deployment-examples
     targetRevision: HEAD
   syncPolicy:
