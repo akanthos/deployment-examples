@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: helm-full-app-2
+  name: helm-full-app-3
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: full-app-2
+    namespace: full-app-3
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: argocd/full-app-2/test
+    path: argocd/full-app-3/test
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
   syncPolicy:
