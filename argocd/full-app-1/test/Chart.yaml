@@ -5,7 +5,7 @@ version: "0.1.0"
 dependencies:
   - name: quarkus-chart
     version: "0.2.0"
-    repository: "oci:://tweumsccockpitacr.azurecr.io/deployment-charts/quarkus-chart"
+    repository: "oci:://tweumsccockpitacr.azurecr.io/deployment-charts"
   - name: openui-chart
     version: "0.1.0"
     repository: "https://akanthos.github.io/deployment-charts"
