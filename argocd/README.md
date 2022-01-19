@@ -1,11 +1,6 @@
-# Exposing the charts as OCI artifacts into Azure Container Registry
+# Deployment Examples
 
-```bash
-
-```
-# To use the helm charts in ArgoCD from a Azure Container Registry
-
-Install the :
+Install helm repository using:
 
 ```bash 
 helm repo add deployment-charts https://akanthos.github.io/deployment-charts/
