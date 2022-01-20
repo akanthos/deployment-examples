@@ -29,6 +29,12 @@ To install an app with a specific chart version and specific environment values:
 ```bash 
 helm upgrade --install quarkus-app1 -f values-test.yaml deployment-charts/quarkus-chart --version 0.2.0
 ```
+To install a helm chart from Azure Container Registry using Helm 3:
+
+```bash
+helm registry login $ACR_NAME.azurecr.io -u $USERNAME -p $PASSWORD 
+helm upgrade --install myhelmtest oci://$ACR_NAME.azurecr.io/deployment-charts/quarkus-chart --version 0.2.0
+```
 
 To install an ACR OCI helm repository at ArgoCD:
 
