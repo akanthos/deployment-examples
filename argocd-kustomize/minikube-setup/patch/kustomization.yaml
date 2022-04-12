@@ -3,19 +3,6 @@ kind: Kustomization
 namespace: argocd
 resources:
   - ../base
-images:
-  - name: quay.io/argoproj/argocd
-    newName: nexus.bmwgroup.net:443/argoproj/argocd
-    newTag: v2.2.5
-  - name: ghcr.io/dexidp/dex
-    newName: nexus.bmwgroup.net:443/dexidp/dex
-    newTag: v2.27.0
-  - name: redis
-    newName: nexus.bmwgroup.net:443/redis
-    newTag: 6.2.4-alpine
-  - name: stakater/reloader
-    newName: nexus.bmwgroup.net:443/stakater/reloader
-    newTag: v0.0.103
 patchesStrategicMerge:
   - argocd-repo-server-patch.yaml
   - argocd-configmap-knownhosts-patch.yaml
