@@ -20,5 +20,7 @@ spec:
   project: default
   source:
     path: argocd-kustomize/app
+    plugin:
+      name: kustomized-helm
     repoURL: https://github.com/akanthos/deployment-examples.git
     targetRevision: HEAD
