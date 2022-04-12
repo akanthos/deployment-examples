@@ -13,10 +13,11 @@ spec:
   source:
     helm:
       valueFiles:
-        - values-scale.yaml
-    path: argocd/full-app-1/test
-    repoURL: {{ .Values.spec.source.repoURL }}
-    targetRevision: {{ .Values.spec.source.targetRevision }}
+        - https://raw.githubusercontent.com/akanthos/deployment-examples/main/argocd/apps/env/extras.yaml
+        - https://raw.githubusercontent.com/akanthos/deployment-examples/main/argocd/full-app-1/test/values-scale.yaml
+    name: quarkus-chart
+    repoURL: oci://tweumsccockpitacr.azurecr.io/deployment-charts
+    targetRevision: v0.1.0
   syncPolicy:
     automated:
       prune: true

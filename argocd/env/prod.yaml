@@ -1,0 +1,2 @@
+appsettings:
+  DB_URL: link_to_db

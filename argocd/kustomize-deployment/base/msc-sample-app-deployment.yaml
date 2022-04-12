@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msc-sample-app-deployment
+  labels:
+    app: msc-sample-app
+spec:
+  replicas: 6
+  selector:
+    matchLabels:
+      app: msc-sample-app
+  template:
+    metadata:
+      labels:
+        app: msc-sample-app
+    spec:
+      imagePullSecrets:
+        - name: regcred
+      containers:
+      - name: msc-sample-app
+        image: tweumsccockpitacr.azurecr.io/msc-sample-app:latest
+        ports:
+        - containerPort: 80

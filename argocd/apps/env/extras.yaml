@@ -1,0 +1,2 @@
+appsettings:
+  DB_URL: my-nice-url

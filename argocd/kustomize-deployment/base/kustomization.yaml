@@ -1,0 +1,4 @@
+
+resources:
+  - msc-sample-app-deployment.yaml
+  - msc-sample-app-svc.yaml

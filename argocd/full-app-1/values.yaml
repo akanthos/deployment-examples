@@ -1,0 +1,4 @@
+#quarkus-chart:
+#  deployment:
+#    image: msc-my-service:3.3.3 # put the correct image here
+#    replicas: 3
