@@ -2,3 +2,5 @@ namePrefix: kustomize-
 
 resources:
   - ./all.yaml
+  - secrets/secrets.yaml
+  - secrets/secret-generator.yaml
