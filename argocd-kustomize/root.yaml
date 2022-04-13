@@ -19,7 +19,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argocd-kustomize/app
+    path: argocd-kustomize/kustomized-app/overlays/dev
     plugin:
       name: kustomized-helm
     repoURL: https://github.com/akanthos/deployment-examples.git
